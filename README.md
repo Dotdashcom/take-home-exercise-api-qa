@@ -34,6 +34,6 @@ Tasks:
 	2. `git commit -m 'adding tests'`
 	3. `git push`
 	4. Head on over to the repository on GitHub.com where your project lives. e.g. `https://github.com/ <your-user-name>/simple-game-service`
-	5. You will see a msg 'This branch is 1 commit ahead of <repo-name>:master' below 'Clone or download' green button.  
-	6. Clicking on 'Pull Request' link next to msg above sends you to a page where you can compare changes. Click 'Create pull request' button and enter a title and optional description.
-	7. When you’re ready typing out title and description, click on 'Create pull request'. This should create a Pull Request and we should be able to review it.
+	5. You will see a msg 'This branch is 1 commit ahead of `<repo-name>:master`' below `Clone or download` green button.  
+	6. Clicking on `Pull Request` link next to msg above sends you to a page where you can compare changes. Click `Create pull request` button and enter a title and optional description.
+	7. When you’re ready typing out title and description, click on `Create pull request`. This should create a Pull Request and we should be able to review it.
