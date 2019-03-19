@@ -30,9 +30,9 @@ Tasks:
     2. Find out the id after hitting game endpoint 7 times. If id increases in a certain pattern, write a test to verify that the game endpoint follows the pattern you have determined.
     3. Find out the text that is displayed when game endpoint is accessed with a name query parameter. Write a test to verify that this text is displayed when the game endpoint is accessed with the name query parameter.
 2. Open a pull request for code review. Use the following steps if required: 
-	1. git add .
-	2. git commit -m 'adding tests'
-	3. git push
+	1. `git add .`
+	2. `git commit -m 'adding tests'`
+	3. `git push`
 	4. Head on over to the repository on GitHub.com where your project lives. e.g. `https://github.com/ <your-user-name>/simple-game-service`
 	5. You will see a msg 'This branch is 1 commit ahead of <repo-name>:master' below 'Clone or download' green button.  
 	6. Clicking on 'Pull Request' link next to msg above sends you to a page where you can compare changes. Click 'Create pull request' button and enter a title and optional description.
