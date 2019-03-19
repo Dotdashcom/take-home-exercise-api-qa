@@ -16,8 +16,7 @@ public class GameController {
 
     @RequestMapping("/game")
     public Game greeting(@RequestParam(value="name", defaultValue="Sudoku") String name) {
-        return new Game(fib(counter++),
-                            String.format(template, name));
+        return Game.builder().id(fib(counter++)).text(String.format(template, name)).build();
     }
     
     private int fib(int counter) {
