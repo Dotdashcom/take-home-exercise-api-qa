@@ -21,6 +21,7 @@ public class GameTests{
 	Game result = null;
 	result = controller.greeting(value);
 
+	//outputting the result and executing the test
 	System.out.println(result.getText());
 	assertEquals(expected, result.getText());
 }
@@ -33,11 +34,12 @@ public class GameTests{
 	Game result = null;
 	result = controller.greeting(value);
 	
+	//outputting the result and executing the test
 	System.out.println(result.getText());
 	assertEquals(expected, result.getText());
 }
 
-//Testing with game name Chess which should return "Playing Chess is fun!"
+//Testing with game with a very long name
 @Test public void LongNameTest(){
 	GameController controller = new GameController();
 	String value = "The name of this game is really really really really really really really really really really really really really really really really really really really really long";
@@ -45,10 +47,11 @@ public class GameTests{
 	Game result = null;
 	result = controller.greeting(value);
 	
+	//outputting the result and executing the test
 	System.out.println(result.getText());
 	assertEquals(expected, result.getText());
 }
-//Testing with a game name that is supposed to fail
+//Testing with a game name that is supposed to fail but with an AssertNotSame command
 @Test public void ExpectedFailure(){
 	GameController controller = new GameController();
 	String value = "Chess";
@@ -56,6 +59,7 @@ public class GameTests{
 	Game result = null;
 	result = controller.greeting(value);
 	
+	//outputting the result and executing the test
 	System.out.println(result.getText());
 	assertNotSame(expected, result.getText());
 }
@@ -85,6 +89,7 @@ public class GameTests{
 	result = null;
 	result = controller.greeting(value);
 	
+	//outputting the result and executing the test
 	System.out.println(result.getId());
 	assertEquals(new Integer(expected), new Integer(result.getId()));	
 	
@@ -102,7 +107,6 @@ public class GameTests{
 	//for loop to simulate the game being run 79 times
 	for (int i = 0; i < 79; i++) {
 		result = controller.greeting(value);
-		
 	}
 	
 	//checking if the result value is positive or negative
@@ -111,6 +115,7 @@ public class GameTests{
 		flag = 1;
 	}
 	
+	//outputting the result and executing the test
 	System.out.println(result.getId());
 	assertEquals(new Integer(expected),new Integer(flag));
 	
@@ -129,6 +134,7 @@ public class GameTests{
 		
 	}
 
+	//outputting the result and executing the test
 	System.out.println(result.getId());
 	assertEquals(new Integer(expected), new Integer(result.getId()));
 
@@ -144,6 +150,7 @@ public class GameTests{
 	Game result = null;
 	result = controller.greeting(value);
 	
+	//outputting the result and executing the test
 	System.out.println(result.getText());
 	assertEquals(expected, result.getText());
 }
