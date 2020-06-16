@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GameController {
+public class GameController{
 
     private static final String template = "Playing %s is fun!";
     private int counter = 1;
