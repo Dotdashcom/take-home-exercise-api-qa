@@ -11,3 +11,4 @@ Background:
 @DefaultGameTest
   Scenario: This test validates the default game
    Then user validates text equals to "Playing Sudoku is fun!"
+	 When request is sent the id is incremented

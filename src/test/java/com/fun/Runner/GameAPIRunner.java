@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/main/java/fun", glue = {
 							"com.fun.steps" }, 
-							dryRun = false, 
+							dryRun = true, 
 							tags = "@DefaultGameTest, @NamedGameTest")
 
 public class GameAPIRunner {
