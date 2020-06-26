@@ -12,6 +12,8 @@ import org.junit.Test;
 
 public class GameTests {
 	
+	
+			
 	@Test
 	//checking for chess
 	public void getgame() {
@@ -24,6 +26,11 @@ public class GameTests {
 		String gamename=jp.getString("text");
 		System.out.println(gamename);
 		assertTrue(gamename.contains(inputgame));
+		
+		int fibid=jp.getInt("id");
+		checkfibonacci cf=new checkfibonacci();
+		//System.out.println(fibid);
+		System.out.println(cf.fibonacci(fibid));
 	}
 	
 	
@@ -39,6 +46,10 @@ public class GameTests {
 		String gamename=jp.getString("text");
 		System.out.println(gamename);
 		assertTrue(gamename.contains(inputgame));
+		int fibid=jp.getInt("id");
+		checkfibonacci cf=new checkfibonacci();
+		//System.out.println(fibid);
+		System.out.println(cf.fibonacci(fibid));
 	}
 	@Test
 	//checking for sudoku
@@ -51,8 +62,13 @@ public class GameTests {
 		String gamename=jp.getString("text");
 		System.out.println(gamename);
 		assertTrue(gamename.contains("Sudoku"));
+		int fibid=jp.getInt("id");
+		checkfibonacci cf=new checkfibonacci();
+		//System.out.println(fibid);
+		System.out.println(cf.fibonacci(fibid));
 	}
 	
+
 }
 
 
