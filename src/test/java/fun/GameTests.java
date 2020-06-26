@@ -61,13 +61,14 @@ public class GameTests {
 		Assert.assertEquals(text, defaultText);
 	}
 
-	@When("request is sent the id is incremented")
-	public void request_is_sent_the_id_is_incremented() {
+	@When("request is sent the id is incremented and is fibonnaci")
+	public void request_is_sent_the_id_is_incremented_and_is_fibonnaci() {
 		int firstId = TestUtil.getResponseId(responseContent);
 		response=TestUtil.getResponse(request, GameConstantsAPI.DEFAULT_API_URI);
 		responseContent = TestUtil.getResponseContent(response);
 		int secondId = TestUtil.getResponseId(responseContent);
 		Assert.assertTrue(secondId > firstId);
+		Assert.assertTrue(TestUtil.isFibonacci(secondId));
 	} 
 	
 	@When("user passes game name parameter as {string}")
