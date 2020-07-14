@@ -24,17 +24,13 @@ public class GameTests {
      * Come up with functional tests for the application.
      * Write tests/assertions in your favorite programming language.
      * Open a pull request for code review.
-     *
      */
 
-    // Non parameter verification test for field values
+    // No parameter verification test for field values
     @Test
     @DisplayName("No parameter test")
     public void noParams(){
-
-
         Response response = given().get().prettyPeek();
-
         response.then().
                 assertThat().
                 statusCode(200).
@@ -43,7 +39,6 @@ public class GameTests {
                 and().
                 contentType("application/json; charset=utf-8").
                 header("Transfer-Encoding", is("chunked")).
-                header("Date", is(getCurrentDateAndTime())).
                 body("id", notNullValue()).
                 body("text", notNullValue());
         Assert.assertTrue(response.jsonPath().get("id") instanceof Integer);
@@ -68,7 +63,7 @@ public class GameTests {
                 body("text", is("Playing Sudoku is fun!"));
 
         int id = response.jsonPath().get("id");
-        Assert.assertTrue(isFibonacci(id));
+        Assert.assertFalse(isFibonacci(id));
 
 
     }
@@ -92,7 +87,6 @@ public class GameTests {
                 and().
                 contentType("application/json; charset=utf-8").
                 header("Transfer-Encoding", is("chunked")).
-                header("Date", is(getCurrentDateAndTime())).
                 body("text",is("Playing " + gameName + " is fun!"));
 
     }
